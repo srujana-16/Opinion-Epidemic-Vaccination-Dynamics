@@ -20,11 +20,21 @@
      python ER_network_simulation/ER_network_simulation.py
      ```
      <br>
-> - The # of infected, # of vaccinated, and # of susceptible individuals will be displayed in the terminal for each monte carlo step.
-
+5. The simulation outputs will pop up in a new window.
 <br>
+### Simulation Details
 
-> - The simulation outputs will pop up in a new window.<br>
+#### The Erdos-Renyi Network 
+ N = 10000, p = 0.001
+
+![Alt text](./docs/output.png)
+
+ - Isolated nodes are randomly connected to any node in the network to form a connected network.
+
+ - The # of infected, # of vaccinated, and # of susceptible individuals will be displayed in the terminal for each monte carlo step.
+
+  - The simulation will run for 100 monte carlo steps.
+
 
 ### Mathematical Model
 

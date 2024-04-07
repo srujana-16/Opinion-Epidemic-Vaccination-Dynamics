@@ -4,8 +4,8 @@
 
 ### How to Run
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory in your terminal.
+1. Clone the repository to your local machine.<br>
+2. Navigate to the project directory in your terminal.<br>
 3. Install the required packages using pip:
    ```
    pip install -r requirements.txt
@@ -19,7 +19,12 @@
      ```
      python ER_network_simulation/ER_network_simulation.py
      ```
-5. View the simulation outputs in the respective output folders.
+     <br>
+> - The # of infected, # of vaccinated, and # of susceptible individuals will be displayed in the terminal for each monte carlo step.
+
+<br>
+
+> - The simulation outputs will pop up in a new window.<br>
 
 ### Mathematical Model
 
@@ -41,12 +46,17 @@ The simulations are based on the following equations:
 - ***NetworkX***: For generating random graphs and network analysis.
 - ***NumPy***: For numerical computations and array operations.
 - ***Matplotlib***: For data visualization.
-- ***Pipreqs***: For generating the requirements.txt file.
+- ***Pipreqs***: For generating the `requirements.txt` file.
 
 ### Outputs
 
-The simulation outputs are saved in the `outputs` folders within the baseline_simulation and ER_network_simulation directories.
+The simulation outputs are saved in the `outputs` folders within the `baseline_simulation` and `ER_network_simulation` directories.
 
+### Contributors
+
+1. Shreeya Singh
+2. Srujana Vanka
+3. Smruti Biswal
 ---
 
 

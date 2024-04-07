@@ -22,6 +22,7 @@
      <br>
 5. The simulation outputs will pop up in a new window.
 <br>
+
 ### Simulation Details
 
 #### The Erdos-Renyi Network 

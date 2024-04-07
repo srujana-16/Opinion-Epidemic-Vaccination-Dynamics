@@ -15,10 +15,23 @@ mcs = 100         # Monte Carlo steps
 
 lambda_values = [0.1, 0.6, 0.7, 0.8]
 
+max_degree = 10
+p = max_degree / (N - 1)
 
 def generate_graph(N, p):
     # Generate a random graph using the ER model
     G = nx.fast_gnp_random_graph(N, p, seed=42)
+
+    print("Maximum degree:", max(dict(G.degree()).values()))
+
+    isolates = list(nx.isolates(G))
+    print(f"Number of isolates: {len(isolates)}")
+
+    # add an edge between an isolate and a random node
+    for isolate in isolates:
+        edge = np.random.choice(G.nodes())
+        G.add_edge(isolate, edge)
+        
     # Get the adjacency matrix
     A = nx.adjacency_matrix(G)
     # Convert the sparse matrix to a NumPy array
@@ -143,13 +156,13 @@ def visualize(lambda_values, alpha, phi, D, w, N, mcs, neighbors_list, A):
     plt.show()
 
 
-def pipe(N, alpha, phi, D, w, mcs, lambda_values):
+def pipe(N, p, alpha, phi, D, w, mcs, lambda_values):
     # Generate a random graph using the ER model
-    A, neighbors_list = generate_graph(N, 0.001) # p = 0.001, p = max degree / (N-1)
+    A, neighbors_list = generate_graph(N, p) # p = 0.001, p = max degree / (N-1)
     visualize(lambda_values, alpha, phi, D, w, N, mcs, neighbors_list, A)
 
-
-pipe(N, alpha, phi, D, w, mcs, lambda_values)
+p = 0.001
+pipe(N, p, alpha, phi, D, w, mcs, lambda_values)
 
 
 # End of the script

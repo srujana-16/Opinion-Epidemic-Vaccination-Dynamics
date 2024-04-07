@@ -41,7 +41,7 @@ def simulate(lambda_value):
     time_series_vaccinated = []
     time_series_average_opinion = []
 
-    for k in range(0, mcs):
+    for k in range(mcs):
         print("mcs \n", k)
         epsilon = np.random.uniform(0, 1)  # Stochastic variable epsilon uniformly distributed in [0.1]
         new_opinions = np.zeros(N)
@@ -56,10 +56,7 @@ def simulate(lambda_value):
             new_opinions[i] = opinions[i] + epsilon * opinions[j] + w * np.mean(infected)  # Equation 1
             
             # Check upper and lower bounds for opinions
-            if new_opinions[i] > 1:
-                new_opinions[i] = 1
-            elif new_opinions[i] < -1:
-                new_opinions[i] = -1
+            new_opinions[i] = max(-1, min(1, new_opinions[i]))
         
         opinions = new_opinions
 
@@ -124,4 +121,4 @@ plt.show()
 
 
 # end of script
-sys.exit()
+sys.exit(0)

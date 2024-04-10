@@ -47,7 +47,8 @@ The simulations are based on the following equations:
 2. **Erdos-Renyi Network Simulation Equations:**
 
     - Opinion Dynamics:
-        -$$  o_i(t+1) = o_i(t) +\frac{ \epsilon}{K_i} \sum_{j \in N_i} A_{ij} o_j(t) + \frac{w}{K_i} \sum_{j \in N_i} A_{ij} \frac{\sum_{k \in N_j} I_k}{K_j}$$
+    ![Alt text](./docs/eqn.png)
+        <!-- -$$  o_i(t+1) = o_i(t) +\frac{ \epsilon}{K_i} \sum_{j \in N_i} A_{ij} o_j(t) + \frac{w}{K_i} \sum_{j \in N_i} A_{ij} \frac{\sum_{k \in N_j} I_k}{K_j}$$ -->
     
     - Epidemic Dynamics:
       ![Alt text](./docs/image-1.png)

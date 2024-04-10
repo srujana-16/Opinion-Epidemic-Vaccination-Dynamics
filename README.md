@@ -1,6 +1,4 @@
-# DPCN-Project
-
-## Sudden transitions in coupled opinion and epidemic dynamics with vaccination in a network
+# Sudden transitions in coupled opinion and epidemic dynamics with vaccination in a network
 
 ### How to Run
 

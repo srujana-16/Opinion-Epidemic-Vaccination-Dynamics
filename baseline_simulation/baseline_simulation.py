@@ -71,7 +71,7 @@ def simulate(lambda_value):
                     vaccinated[i] = 1
                     susceptible[i] = 0
                 # Susceptible -> Infected transition
-                elif np.random.uniform(0, 1) <= ((1 - gamma[i]) * lambda_value * np.mean(infected)): #lambda dependent
+                elif infected[np.random.randint(N)] == 1 and np.random.uniform(0, 1) <= lambda_value:
                     infected[i] = 1
                     susceptible[i] = 0
                       

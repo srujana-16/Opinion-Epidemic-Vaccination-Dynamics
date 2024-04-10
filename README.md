@@ -1,6 +1,6 @@
 # Sudden transitions in coupled opinion and epidemic dynamics with vaccination in a network
 
-### How to Run
+## Instructions to Run
 
 1. Clone the repository to your local machine.<br>
 2. Navigate to the project directory in your terminal.<br>
@@ -21,9 +21,9 @@
 5. The simulation outputs will pop up in a new window.
 <br>
 
-### Simulation Details
+## Simulation Details
 
-#### The Erdos-Renyi Network 
+### The Erdos-Renyi Network 
  N = 10000, p = 0.001
 
 ![Alt text](./docs/output.png)
@@ -35,7 +35,7 @@
   - The simulation will run for 100 monte carlo steps.
 
 
-### Mathematical Model
+## Mathematical Model
 
 The simulations are based on the following equations:
 
@@ -50,18 +50,18 @@ The simulations are based on the following equations:
     - Epidemic Dynamics:
       ![Alt text](./docs/image-1.png)
 
-### Libraries Used
+## Libraries and Modules Used
 
 - ***NetworkX***: For generating random graphs and network analysis.
 - ***NumPy***: For numerical computations and array operations.
 - ***Matplotlib***: For data visualization.
 - ***Pipreqs***: For generating the `requirements.txt` file.
 
-### Outputs
+## Outputs
 
 The simulation outputs are saved in the `outputs` folders within the `baseline_simulation` and `ER_network_simulation` directories.
 
-### Contributors
+## Contributors
 
 1. Shreeya Singh
 2. Srujana Vanka

@@ -1,7 +1,5 @@
 # Sudden transitions in coupled opinion and epidemic dynamics with vaccination in a network
 
-## Aim 
-
 The project aims to explore the relationship between the SIS epidemic model, vaccination dynamics, and opinion dynamics. Using continuous opinions and Monte Carlo simulations, we seek to understand how these factors interact within a population.
 
 ## Instructions to Run

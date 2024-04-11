@@ -13,6 +13,7 @@ The project aims to explore the relationship between the SIS epidemic model, vac
 3. Explore Transition Points:
    - Identify critical transition points in disease control strategies influenced by public opinion and vaccine effectiveness.
    - Employ Monte Carlo simulations to study udden transitions in coupled opinion and epidemic dynamics.
+<br>
 
 ## Instructions to Run
 
@@ -35,46 +36,18 @@ The project aims to explore the relationship between the SIS epidemic model, vac
 5. The simulation outputs will pop up in a new window.
 <br>
 
-## Simulation Details
-
-### The Erdos-Renyi Network 
- N = 10000, p = 0.001
-
-![Alt text](./docs/output.png)
-
- - Isolated nodes are randomly connected to any node in the network to form a connected network.
-
- - The # of infected, # of vaccinated, and # of susceptible individuals will be displayed in the terminal for each monte carlo step.
-
-  - The simulation will run for 100 monte carlo steps.
-
-
-## Mathematical Model
-
-The simulations are based on the following equations:
-
-1. **Baseline Simulation Equations:**
-![Alt text](./docs/image.png)
-    
-2. **Erdos-Renyi Network Simulation Equations:**
-
-    - Opinion Dynamics:
-    ![Alt text](./docs/eqn.png)
-        <!-- -$$  o_i(t+1) = o_i(t) +\frac{ \epsilon}{K_i} \sum_{j \in N_i} A_{ij} o_j(t) + \frac{w}{K_i} \sum_{j \in N_i} A_{ij} \frac{\sum_{k \in N_j} I_k}{K_j}$$ -->
-    
-    - Epidemic Dynamics:
-      ![Alt text](./docs/image-1.png)
-
 ## Libraries and Modules Used
 
 - ***NetworkX***: For generating random graphs and network analysis.
 - ***NumPy***: For numerical computations and array operations.
 - ***Matplotlib***: For data visualization.
 - ***Pipreqs***: For generating the `requirements.txt` file.
+<br>
 
 ## Outputs
 
 The simulation outputs are saved in the `outputs` folders within the `baseline_simulation` and `ER_network_simulation` directories.
+<br>
 
 ## Contributors
 

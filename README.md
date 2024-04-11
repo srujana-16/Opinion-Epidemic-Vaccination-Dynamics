@@ -2,6 +2,18 @@
 
 The project aims to explore the relationship between the SIS epidemic model, vaccination dynamics, and opinion dynamics. Using continuous opinions and Monte Carlo simulations, we seek to understand how these factors interact within a population.
 
+## Objectives
+
+1. Investigate Opinion Dynamics:
+   - Utilize continuous opinion dynamics to model public attitudes towards vaccination.
+   - Analyze how opinion dynamics influence vaccination uptake and disease spread.
+2. Model Epidemic Dynamics:
+   - Implement the Susceptible-Infected-Susceptible (SIS) model to simulate disease spread.
+   - Explore the impact of vaccination campaigns on epidemic dynamics using differential equations.
+3. Explore Transition Points:
+   - Identify critical transition points in disease control strategies influenced by public opinion and vaccine effectiveness.
+   - Employ Monte Carlo simulations to study udden transitions in coupled opinion and epidemic dynamics.
+
 ## Instructions to Run
 
 1. Clone the repository to your local machine.<br>
